@@ -1,0 +1,12 @@
+<app-header title="alert"></app-header>
+<ion-content>
+    <ion-button (click)="presentAlert()" expand="block" class="ion-padding">
+        Alert
+    </ion-button>
+    <ion-button (click)="presentAlertMultipleButtons()" expand="block" class="ion-padding">
+        Alert MultiButtons
+    </ion-button>
+    <ion-button id="present-alert" expand="block" class="ion-padding">Alert Form</ion-button>
+    <ion-alert trigger="present-alert" header="Please enter your info" [buttons]="alertButtons"
+        [inputs]="alertInputs"></ion-alert>
+</ion-content>

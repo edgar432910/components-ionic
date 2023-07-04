@@ -1,0 +1,19 @@
+<app-header title="Toast">
+
+</app-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-button (click)="setOpen(true)" expand="block" fill="clear" shape="round">
+    Click me
+  </ion-button>
+  <ion-button (click)="presentToast('top')" expand="block" fill="clear" shape="round">
+    Click me
+  </ion-button>
+
+  <ion-toast
+    [isOpen]="isToastOpen"
+    message="This toast will close in 5 seconds"
+    [duration]="2000"
+    (didDismiss)="setOpen(false)"
+  ></ion-toast>
+</ion-content>

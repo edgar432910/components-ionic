@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="medium"  (click) ="leftWithOutArguments()">Cancel</ion-button>
+    </ion-buttons>
+    <ion-title>{{nombre}} -{{pais}}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button  [strong]="true">Confirm</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+    <ion-button (click)="leftWithOutArguments()" expand="block" >
+      Close
+    </ion-button>
+    <ion-button (click)="leftWithArguments()" expand="block" >
+      Send
+    </ion-button>
+</ion-content>
